@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #bc4e9c;
+    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(img/portada.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* sobre nosotros */
+
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 48%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #4d0686;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*  Servicios */
+
+.about-services{
+    background:  hsla(340, 95%, 50%, 0.322);
+    padding-bottom: 30px;
+}
+
+
+.servicio-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* footer */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html#">Inicio</a>
+            <a href="especialidades.html">Especialidades</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="servicio.html">Servicios</a>
+            <a href="Agenda.html">Agendar Cita</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Veterinaria Latacunga</h1>
+            <h2>ofrecemos los mejores servicios para tus mascotas</h2>
+        </section>
+        <section class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></section>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">ACERCA DE NOSOTROS</h2>
+            <section class="contenedor-sobre-nosotros">
+                <img src="img/inf.jpg" alt="" class="imagen-about-us">
+                <article class="contenido-textos">
+                    <h3><span>1</span>NUESTRA MISIÓN</h3>
+                    <p>Brindar a los Pacientes y a sus Familiares servicios dignos con calidez y excelencia para otorgar los mejores
+                        tratamientos médicos hospitalarios, adquiriendo habilidades, destrezas y uso de nuevas
+                        tecnologías en la Práctica de la Medicina Veterinaria a los estudiantes de Licenciatura y Posgrado.</p>
+                    <h3><span>2</span>NUESTRA VISIÓN</h3>
+                    <p>Formar profesionales con calidad, competentes y éticos, los cuales a través del pensamiento crítico y constructivo
+                        diagnosticarán y resolverán los problemas del bienestar y la salud animal, la salud pública y los
+                        del sector agropecuario, de manera comprometida con el desarrollo equitativo, social y sostenible.</p>
+                </article>
+            </section>
+        </section>
+
+        <main>
+            <section class="about-services">
+                <section class="contenedor">
+                    <h2 class="titulo">NUESTRA TRAYECTORIA</h2>
+                    <section class="servicio-cont">
+                        <article class="servicio-ind">
+                            <img src="img/ilustracion1.jpg" alt="">
+                            <h3>Vacunación</h3>
+                            <p>Para consultar nuestros servicios, puede hacerlo solicitándolos vía email: info@veterinarialatacunga.com
+                                Rabia: Se aplica a partir de las 12 semanas de edad. Revacunación Anual de Séxtuple y Rabia.</p>
+                        </article>
+                        <article class="servicio-ind">
+                            <img src="img/cirugias.jpg" alt="">
+                            <h3>Cirugías</h3>
+                            <p>Es una de las principales herramientas terapéuticas dentro de la sanidad veterinaria. Nuestro equipo de especialistas destaca por su capacidad profesional así también como de su formación
+                                continua los que nos permite situarnos en la vanguardia de la cirugía veterinaria</p>
+                        </article>
+                        <article class="servicio-ind">
+                            <img src="img/vacunacion.jpg" alt="">
+                            <h3>Laboratorio Clínico</h3>
+                            <p>Es una de las principales herramientas terapéuticas dentro de la sanidad veterinaria. Nuestro equipo de especialistas destaca por su capacidad profesional así también como de su formación continua los que
+                                nos permite situarnos en la vanguardia de la cirugía veterinaria</p>
+                        </article>
+
+                    </section>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <section class="contenedor-footer">
+                <article class="content-foo">
+                    <h4>Telefono</h4>
+                    <p>0994406682</p>
+                </article>
+                <article class="content-foo">
+                    <h4>Email</h4>
+                    <p><a href="mailto:luis.pallo6390@utc.edu.ec" style="color: rgb(172, 168, 168);">luis.pallo6390@utc.edu.ec</a></p>
+
+                </article>
+                <article class="content-foo">
+                    <h4>Ubicación</h4>
+                    <p>Latacunga-Ecuador</p>
+                </article>
+            </section>
+            <h2 class="titulo-final">&copy; Sistemas | 7mo "A"</h2>
+        </footer>
+</body>
+
+</html>

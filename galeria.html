@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+</head>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #bc4e9c;
+    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(img/portada.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Galeria */
+
+
+.portafolio{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273,91%,27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* Clients */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #4d0686;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+
+/* footer */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+</style>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html#">Inicio</a>
+            <a href="especialidades.html">Especialidades</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="servicio.html">Servicios</a>
+            <a href="Agenda.html">Agendar Cita</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Nuestra Galeria</h1>
+            <h2>Captamos todos tus momentos felíces</h2>
+        </section>
+
+    </header>
+    <main>
+        <section class="portafolio">
+            <section class="contenedor">
+                <h2 class="titulo">Galeria</h2>
+                <section class="galeria-port">
+                    <section class="imagen-port">
+                        <img src="img/img1.jpg" alt="">
+                        <article class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </article>
+                    </section>
+                    <section class="imagen-port">
+                        <img src="img/img2.jpg" alt="">
+                        <article class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </article>
+                    </section>
+                    <section class="imagen-port">
+                        <img src="img/img3.jpg" alt="">
+                        <article class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </article>
+                    </section>
+                    <section class="imagen-port">
+                        <img src="img/img1.jpg" alt="">
+                        <article class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </article>
+                    </section>
+                    <section class="imagen-port">
+                        <img src="img/img4.jpg" alt="">
+                        <article class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </article>
+                    </section>
+                    <section class="imagen-port">
+                        <img src="img/img5.jpg" alt="">
+                        <article class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </article>
+                    </section>
+                    <section class="imagen-port">
+                        <img src="img/img6.jpg" alt="">
+                        <article class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </article>
+                    </section>
+                    <section class="imagen-port">
+                        <img src="img/img7.jpg" alt="">
+                        <article class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Nuestro trabajo</p>
+                        </article>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="clientes contenedor">
+            <h2 class="titulo">Que dicen nuestros clientes</h2>
+            <section class="cards">
+                <section class="card">
+                    <img src="img/cliente1.jpg" alt="">
+                    <article class="contenido-texto-card">
+                        <h4>Andy Panchi</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+                    </article>
+                </section>
+                <section class="card">
+                    <img src="img/cliente2.jpg" alt="">
+                    <article class="contenido-texto-card">
+                        <h4>Lisbeth Rocha</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+                    </article>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section class="contenedor-footer">
+            <article class="content-foo">
+                <h4>Telefono</h4>
+                <p>0994406682</p>
+            </article>
+            <article class="content-foo">
+                <h4>Email</h4>
+                <p><a href="mailto:luis.pallo6390@utc.edu.ec" style="color: rgb(172, 168, 168);">luis.pallo6390@utc.edu.ec</a></p>
+              
+            </article>
+            <article class="content-foo">
+                <h4>Ubicación</h4>
+                <p>Latacunga-Ecuador</p>
+            </article>
+        </section>
+        <h2 class="titulo-final">&copy; Sistemas | 7mo "A"</h2>
+    </footer>
+</body>
+</html>
